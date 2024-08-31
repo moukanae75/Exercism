@@ -2,15 +2,20 @@ package rotationalcipher
 
 func RotationalCipher(plain string, shiftKey int) string {
 	result :=""
-	var trans byte
+
 	for _,c := range plain  {
-		if c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' {
-			trans = byte(c + rune(shiftKey))
-			if c + rune(shiftKey) > 26 {
-				trans -= 26
+		sum := c + rune(shiftKey)
+		if c >= 'a' && c <= 'z' {
+			if sum > 122  {
+				sum -= 26
 			}
-			result += string(trans)
-		}else {
+			result += string(sum)
+		}else if c >= 'A' && c <= 'Z'{
+			if sum > 90 {
+				sum -= 26
+			}
+			result += string(sum)
+		}else{
 			result += string(c)
 		}
 		
