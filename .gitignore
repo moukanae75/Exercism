@@ -1,0 +1,173 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Lock files (optional - some prefer to include these)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+/build
+/dist
+/out
+*.tsbuildinfo
+
+# JavaScript/TypeScript/Node.js
+coverage/
+*.lcov
+.nyc_output
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+jspm_packages/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.ilk
+*.map
+*.exp
+*.lib
+*.a
+*.la
+*.lo
+*.slo
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# PowerShell
+*.ps1xml
+*.psc1
+*.psm1
+*.psd1
+*.ps1
+*.pssc
+*.psrc
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Yarn specific
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Exercism specific
+/bin/configlet
+/bin/configlet.exe
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Test data files
+*.dat
+record.dat
+
+# Compiled binaries (various languages)
+a.exe
+*.exe
+*.out
+*.app
+*.dSYM/
+
+# Language-specific build artifacts
+target/
+Cargo.lock
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Package files
+*.deb
+*.rpm
+*.msi
+*.dmg
+*.pkg
+
+# Documentation
+*.pdf
+*.doc
+*.docx

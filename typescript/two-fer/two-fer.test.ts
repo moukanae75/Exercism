@@ -4,7 +4,7 @@ import { twoFer } from './two-fer.ts'
 describe('TwoFer', () => {
   it('no name given', () => {
     const expected = 'One for you, one for me.'
-    expect(twoFer()).toEqual(expected)
+    expect(twoFer('')).toEqual(expected)
   })
 
   xit('a name given', () => {
