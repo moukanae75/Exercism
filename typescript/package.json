@@ -1,0 +1,18 @@
+{
+  "name": "exercism-typescript-workspace",
+  "version": "1.0.0",
+  "description": "Exercism TypeScript exercises workspace",
+  "private": true,
+  "workspaces": [
+    "*"
+  ],
+  "packageManager": "yarn@4.5.1",
+  "scripts": {
+    "test": "echo 'Run tests in specific exercise folder'",
+    "install-all": "yarn workspaces foreach install"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.0.4",
+    "@types/jest": "^30.0.0"
+  }
+}
