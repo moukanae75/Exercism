@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>D&D Character Generator</title>
+   
 </head>
-<body id="body">
-    <h1>مرحبًا بكم في Exercism</h1>
-    <script src="./index.js"></script>
+<body>
+    <h1>🎲 D&D Character Generator</h1>
+
+    <button id="createBtn">click</button>
+    
+    
+    <div id="characterDisplay">
+
+
+    </div>
+
+    <script src="index.js"> </script>
     <script>
-        const color1 = decodedValue('brown', 'green', 'blue');
-        document.getElementById('body').innerHTML += `<p>اللون الأحمر: ${color1}</p>`;
+        document.getElementById("characterDisplay").innerHTML = `Hello`
+        const character = new DnDCharacter()
+        console.log(character)
+        document.getElementById("createBtn").addEventListener('click',function() {
+            console.log("Button clicked")
+            const character = new DnDCharacter()
+            document.getElementById('characterDisplay').innerHTML = `
+            <p>${character.strength}</p>
+            ` ;
+        
+        })
     </script>
+   
+
     
 </body>
 </html>

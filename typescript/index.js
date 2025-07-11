@@ -1,28 +1,32 @@
-// نسخ الكود من TypeScript مباشرة
-const COLORS = [
-  'black',
-  'brown',
-  'red',
-  'orange',
-  'yellow',
-  'green',
-  'blue',
-  'violet',
-  'grey',
-  'white',
-];
+class DnDCharacter {
+  constructor () {
+    console.log("cracter created succefuly")
+    this.strength = DnDCharacter.generateAbilityScore();
+    this.dexterity = DnDCharacter.generateAbilityScore();
+    this.constitution = DnDCharacter.generateAbilityScore();
 
-const colorCode = (color) => {
-  return COLORS.indexOf(color);
-};
+    this.intelligence = DnDCharacter.generateAbilityScore();
+    this.wisdom = DnDCharacter.generateAbilityScore();
+    this.charisma = DnDCharacter.generateAbilityScore();
 
-// تصحيح منطق الحساب
-function decodedValue(first, second, third) {
-  // للمقاومة: الأول * 10 + الثاني = القيمة، الثالث = التسامح
-  return `${colorCode(first)}${colorCode(second)}`;
+      console.log("✅ تم إنشاء الشخصية بالقدرات:", {
+            strength: this.strength,
+            dexterity: this.dexterity,
+            constitution: this.constitution,
+            hitpoints: this.hitpoints
+
+        });
+  }
+  static generateAbilityScore() {
+    console.log("🎲 رمي أحجار النرد...");
+    const rolls = [];
+        for (let i = 0; i < 4; i++) {
+            const roll = Math.floor(Math.random() * 6) + 1;
+            rolls.push(roll);
+        }
+        console.log(rolls)
+       rolls.sort((a,b)=>b-a);
+       const result = rolls[0] + rolls[1] + rolls[2];
+       return result;
+  } ;
 }
-
-// جعل الدوال متاحة عالمياً للاستخدام في HTML
-window.colorCode = colorCode;
-window.decodedValue = decodedValue;
-window.COLORS = COLORS;
