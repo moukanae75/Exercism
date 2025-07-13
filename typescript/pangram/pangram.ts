@@ -1,4 +1,4 @@
-function isPangram(text) {
+export function isPangram(text: string): boolean {
   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
   const lowerText = text.toLowerCase();
   

@@ -7,29 +7,18 @@
    
 </head>
 <body>
-    <h1>🎲 D&D Character Generator</h1>
 
-    <button id="createBtn">click</button>
     
     
-    <div id="characterDisplay">
+    <div id="pangram">
 
 
     </div>
 
     <script src="index.js"> </script>
     <script>
-        document.getElementById("characterDisplay").innerHTML = `Hello`
-        const character = new DnDCharacter()
-        console.log(character)
-        document.getElementById("createBtn").addEventListener('click',function() {
-            console.log("Button clicked")
-            const character = new DnDCharacter()
-            document.getElementById('characterDisplay').innerHTML = `
-            <p>${character.strength}</p>
-            ` ;
-        
-        })
+        const pangram = isPangram("The quick brown fox jumps over the lazy dog.");
+        document.getElementById("pangram").innerHTML = "" + pangram + " is a pangram.";
     </script>
    
 
