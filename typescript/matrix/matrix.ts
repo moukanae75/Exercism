@@ -1,23 +1,23 @@
- class Matrix {
+export class Matrix {
+    public data: number[][];
     
-    
-    constructor(input) {
+    constructor(input: string) {
         this.data = input.split('\n').map(row => row.split(' ').map(Number));
     }
 
-    get rows(){
+    get rows(): number[][] {
         return this.data;
     }
 
-    get columns(){
-        const result = [];
+    get columns(): number[][] {
+        const result: number[][] = [];
         
-        // عدد الأعمدة = طول الصف الأول
+
         const numCols = this.data[0].length;
         
-        // لكل عمود
+
         for (let colIndex = 0; colIndex < numCols; colIndex++) {
-            const column = [];
+            const column: number[] = [];
             
             // اجمع العنصر من كل صف
             for (let rowIndex = 0; rowIndex < this.data.length; rowIndex++) {
